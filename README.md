@@ -2,7 +2,7 @@
 
 ## Mis iconos
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 This project is a starting point for a Flutter application.
 

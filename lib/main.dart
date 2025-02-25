@@ -27,38 +27,52 @@ class MisIconos extends StatelessWidget {
         ),
         drawer: Drawer(),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center, // Centra los íconos en la fila
             children: <Widget>[
-              SizedBox(height: 15),
-              Icon(Icons.favorite, color: Colors.pink, size: 24.0),
-              Text(
-                'Corazon',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: const Color.fromARGB(255, 148, 5, 0),
-                ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.favorite, color: Colors.pink, size: 24.0),
+                  Text(
+                    'Corazon',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: const Color.fromARGB(255, 148, 5, 0),
+                    ),
+                  ),
+                ],
               ),
-              SizedBox(height: 15), // Espacio entre las imágenes
-              Icon(Icons.audiotrack, color: Colors.green, size: 30.0),
-              Text(
-                'Nota Musical',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: const Color.fromARGB(255, 204, 190, 0),
-                ),
+              SizedBox(width: 20), // Espacio entre los íconos
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.audiotrack, color: Colors.green, size: 30.0),
+                  Text(
+                    'Nota Musical',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: const Color.fromARGB(255, 204, 190, 0),
+                    ),
+                  ),
+                ],
               ),
-              SizedBox(height: 15), // Espacio entre las imágenes
-              Icon(Icons.beach_access, color: Colors.blue, size: 36.0),
-              Text(
-                'Sombrilla',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: const Color.fromARGB(255, 173, 113, 0),
-                ),
+              SizedBox(width: 20), // Espacio entre los íconos
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.beach_access, color: Colors.blue, size: 36.0),
+                  Text(
+                    'Sombrilla',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: const Color.fromARGB(255, 173, 113, 0),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
